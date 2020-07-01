@@ -10,7 +10,8 @@
     "strict": true,                           
     "typeRoots": [
       "./node_modules/@types",
-      "./src/@types"
+      "./src/@types",
+      "./knexfile",
     ],                       
     "esModuleInterop": true,                  
     "resolveJsonModule": true,
@@ -25,5 +26,13 @@
       "@views/*": ["./src/views/*"],
       "@config/*": ["./src/config/*"],
     }  
-  }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+      "node_modules",
+      "**/*.spec.ts",
+      "knexfile.ts"
+  ]
 }
