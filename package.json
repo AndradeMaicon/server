@@ -7,8 +7,9 @@
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpileOnly --ignore-watch node_modules --no-notify src/server.ts",
     "make": "knex migrate:make --knexfile knexfile.ts",
     "latest": "knex migrate:latest --knexfile knexfile.ts",
-    "seed:mk": "knex seed:make",
-    "seed:rs": "knex seed:run --specific",
+    "seed:mk": "knex seed:make --knexfile knexfile.ts",
+    "seed:rs": "knex seed:run --specific --knexfile knexfile.ts",
+    "seed:run": "knex seed:run --knexfile knexfile.ts",
     "rollback": "knex migrate:rollback"
   },
   "dependencies": {
