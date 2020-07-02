@@ -15,6 +15,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "no-unused-vars": ["error", { "varsIgnorePattern": "[kK]nex" }]
+        "no-unused-vars": ["error", { "varsIgnorePattern": "[kK]nex" }],
+        "camelcase": 0
     }
 }
